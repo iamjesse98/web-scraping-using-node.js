@@ -33,8 +33,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <input type="text" id="url"/>
-	<input type="text" id="selector"/>
+        <input type="text" id="url" placeholder="url"/>
+	<input type="text" id="selector" placeholder="selector"/>
 	<button onClick={this.scrape.bind(this)}>Scrape</button>
 	<ul>
 		{this.state.texts.map( t => <li key={t}>{t}</li> )}
