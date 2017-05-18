@@ -1,0 +1,24 @@
+<md-card>
+		<form>
+			<md-input-container style="width: 100%">
+			  <input mdInput placeholder="Enter a website" #url>
+			</md-input-container>
+			<md-input-container style="width: 100%">
+			  <input mdInput placeholder="Enter Selector" #slt>
+			</md-input-container>
+
+			  <button md-button class="su" (click)="scrape(url.value, slt.value)">SCRAPE</button>
+			  <button md-button class="re" type="reset">RESET</button>
+		  </form>
+
+</md-card>
+
+<md-card>
+
+	<p *ngFor="let el of results">{{ el }}</p>
+
+</md-card>
+
+<md-card>
+	made with Angular, Angular-material, request, cheerio by &lt;Jesse /&gt;
+</md-card>
